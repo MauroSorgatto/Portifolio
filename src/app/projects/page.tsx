@@ -59,7 +59,7 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 }
 
 export const metadata: Metadata = {
-  title: 'Projects',
+  title: 'Projetos',
   description: 'Things I’ve made trying to put my dent in the universe.',
 }
 
