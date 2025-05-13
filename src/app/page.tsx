@@ -11,11 +11,11 @@ import {
   LinkedInIcon,
   XIcon,
 } from '@/components/SocialIcons'
-import logoAirbnb from '@/images/logos/airbnb.svg'
 import azzeroLogo from '@/images/logos/azzerologo.svg'
-import image1 from '@/images/photos/Futebol.jpg'
-import image2 from '@/images/photos/GameOver.jpg'
-import image3 from '@/images/photos/HelloWorld.jpg'
+import futebol from '@/images/photos/Futebol.jpg'
+import gameover from '@/images/photos/GameOver.jpg'
+import helloworld from '@/images/photos/HelloWorld.jpg'
+import criLogo from "@/images/logos/crilogo.jpg"
 
 function BriefcaseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -88,7 +88,7 @@ function Role({ role }: { role: Role }) {
   return (
     <li className="flex gap-4">
       <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md ring-1 shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-        <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
+        <Image src={role.logo} alt="" className="h-7 w-7 rounded-full" unoptimized />
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
         <dt className="sr-only">Company</dt>
@@ -117,7 +117,7 @@ function Resume() {
   let resume: Array<Role> = [
     {
       company: 'Azzero Studio',
-      title: 'Full Stack Developer',
+      title: 'Front end engineer',
       logo: azzeroLogo,
       start: '2023',
       end: {
@@ -128,7 +128,7 @@ function Resume() {
     {
       company: 'CRI Imobiliária',
       title: 'Desenvolvedor de Sofware',
-      logo: logoAirbnb,
+      logo: criLogo,
       start: '2023',
       end: '2024',
     },
@@ -159,7 +159,7 @@ function Photos() {
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3].map((image, imageIndex) => (
+        {[futebol, gameover, helloworld].map((image, imageIndex) => (
           <div
             key={image.src}
             className={clsx(
@@ -191,7 +191,7 @@ export default async function Home() {
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             Sou Mauro, desenvolvedor de software com 3 anos de experiência, atualmente residindo em Tijucas/SC.
-            Faço parte da Azzero Studio, uma holding de tecnologia focada em conectar clientes às soluções ideais para os seus desafios.
+            Faço parte da Azzero, uma holding de tecnologia focada em conectar clientes às soluções ideais para os seus desafios.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink href="https://x.com/MauroSorgatto" aria-label="Follow on X" icon={XIcon} />

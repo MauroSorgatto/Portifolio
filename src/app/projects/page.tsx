@@ -3,47 +3,39 @@ import Image from 'next/image'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoAzzero from '@/images/logos/azzerologo.svg'
+import logoVendi from '@/images/logos/vendi.svg'
+import logoStag from '@/images/logos/stag.svg'
+import logoKaroliny from "@/images/logos/logoKaroliny.svg"
 
 const projects = [
   {
-    name: 'Planetaria',
+    name: 'Stag App',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'O Stag é um software projetado para advogados individuais, ajudando-os a organizar sua rotina, automatizar tarefas e colaborar em grupos de trabalho sem a complexidade dos sistemas tradicionais.',
+    link: { href: 'https://www.stag.com.br/', label: 'stag.com.br' },
+    logo: logoStag,
   },
   {
-    name: 'Animaginary',
+    name: 'LP Psicóloga Karoliny',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      'Landing page para a psicóloga Karoliny',
+    link: { href: 'https://psicologakaroliny.com.br/', label: 'psicologakaroliny.com.br' },
+    logo: logoKaroliny,
   },
   {
-    name: 'HelioStream',
+    name: 'Vendi App',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
+      'A Vendi é uma plataforma digital que elimina intermediários no processo de compra e venda de veículos, tornando-o mais simples, seguro e rentável para vendedores e compradores.',
+    link: { href: 'https://vendi-one.vercel.app/', label: 'vendi-one.vercel.app/' },
+    logo: logoVendi,
   },
   {
-    name: 'cosmOS',
+    name: 'LP Azzero',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+      'Landing page para a Azzero.',
+    link: { href: 'https://www.azzero.com.br/', label: 'azzero.com.br/' },
+    logo: logoAzzero,
   },
 ]
 
@@ -60,14 +52,14 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const metadata: Metadata = {
   title: 'Projetos',
-  description: 'Things I’ve made trying to put my dent in the universe.',
+  description: 'Coisas que criei tentando deixar minha marca no universo.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Things I’ve made trying to put my dent in the universe."
-      intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+      title="Coisas que criei tentando deixar minha marca no universo."
+      intro="Trabalhei em vários pequenos projetos ao longo dos anos, mas estes são os dos quais mais me orgulho."
     >
       <ul
         role="list"
