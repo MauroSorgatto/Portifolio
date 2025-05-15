@@ -52,13 +52,13 @@ function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const metadata: Metadata = {
   title: 'Projetos',
-  description: 'Coisas que criei tentando deixar minha marca no universo.',
+  description: 'Coisas que criei tentando deixar minha marca no mundo.',
 }
 
 export default function Projects() {
   return (
     <SimpleLayout
-      title="Coisas que criei tentando deixar minha marca no universo."
+      title="Coisas que criei tentando deixar minha marca no mundo."
       intro="Trabalhei em vários pequenos projetos ao longo dos anos, mas estes são os dos quais mais me orgulho."
     >
       <ul

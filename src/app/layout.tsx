@@ -12,7 +12,7 @@ export const metadata: Metadata = {
       'Mauro Sorgatto - Front-End Engineer',
   },
   description:
-    'Eu sou Mauro, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.',
+    'Eu sou Mauro, Moro em Tijucas.  Sou formado em Análise e Desenvolvimento de Sistemas pela Univali desde 2024, mas já tô na área desde 2023.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="h-full antialiased" suppressHydrationWarning>
+    <html lang="br" className="h-full antialiased" suppressHydrationWarning>
       <body className="flex h-full bg-zinc-50 dark:bg-black">
         <Providers>
           <div className="flex w-full">
