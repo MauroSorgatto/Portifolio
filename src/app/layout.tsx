@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: {
     template: '%s - Mauro Sorgatto',
     default:
-      'Mauro Sorgatto - Desenvolvedor de Sofware',
+      'Mauro Sorgatto - Front-End Engineer',
   },
   description:
     'Eu sou Mauro, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms.',

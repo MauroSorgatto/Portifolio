@@ -117,7 +117,7 @@ function Resume() {
   let resume: Array<Role> = [
     {
       company: 'Azzero Studio',
-      title: 'Front end engineer',
+      title: 'Front-End Engineer',
       logo: azzeroLogo,
       start: '2023',
       end: {
@@ -127,7 +127,7 @@ function Resume() {
     },
     {
       company: 'CRI Imobiliária',
-      title: 'Desenvolvedor de Sofware',
+      title: 'Front-End Engineer',
       logo: criLogo,
       start: '2023',
       end: '2024',
@@ -187,7 +187,7 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Desenvolvedor de Sofware.
+            Front-End Engineer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             Sou Mauro, desenvolvedor de software com 3 anos de experiência, atualmente residindo em Tijucas/SC.
