@@ -14,6 +14,7 @@ import futebol from '@/images/photos/Futebol.jpg'
 import gameover from '@/images/photos/GameOver.jpg'
 import helloworld from '@/images/photos/HelloWorld.jpg'
 import criLogo from "@/images/logos/crilogo.jpg"
+import { Button } from '@/components/Button'
 
 function BriefcaseIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
   return (
@@ -143,10 +144,10 @@ function Resume() {
           <Role key={roleIndex} role={role} />
         ))}
       </ol>
-      {/* <Button href="#" variant="secondary" className="group mt-6 w-full">
+      <Button href="https://drive.google.com/file/d/1N1LHVLiH9HCPOL1DuCx-OoSwoImrKn7b/view?usp=drive_link" variant="secondary" className="group mt-6 w-full">
         Download CV
         <ArrowDownIcon className="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50" />
-      </Button> */}
+      </Button>
     </div>
   )
 }
