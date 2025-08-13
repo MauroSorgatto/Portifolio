@@ -12,7 +12,7 @@ export const metadata: Metadata = {
       'Mauro Sorgatto - Front-End Engineer',
   },
   description:
-    'Eu sou Mauro, Moro em Tijucas.  Sou formado em Análise e Desenvolvimento de Sistemas pela Univali desde 2024, mas já tô na área desde 2023.',
+    'Eu sou Mauro, Moro em Jaragua do Sul.  Sou formado em Análise e Desenvolvimento de Sistemas pela Univali desde 2024, mas já tô na área desde 2023.',
   alternates: {
     types: {
       'application/rss+xml': `${process.env.NEXT_PUBLIC_SITE_URL}/feed.xml`,
