@@ -118,11 +118,8 @@ function Resume() {
       company: 'Azzero Studio',
       title: 'Front-End Engineer',
       logo: azzeroLogo,
-      start: '2023',
-      end: {
-        label: 'Present',
-        dateTime: new Date().getFullYear().toString(),
-      },
+      start: 'July 2023',
+      end: 'February 2026',
     },
     {
       company: 'CRI Imobiliária',

@@ -36,7 +36,12 @@ const projects = [
       'Landing page para a Azzero.',
     link: { href: 'https://www.azzero.com.br/', label: 'azzero.com.br/' },
     logo: logoAzzero,
-  },
+  },{
+    name: "Ballast",
+    description:"Ballast é um aplicativo voltado para controle financeiro pessoal, com funcionalidades de controle de gastos, receitas, investimentos e metas.",
+    link: { href: 'https://ballast-olive.vercel.app', label: 'ballast-olive.vercel.app' },
+    logo: logoAzzero
+  }
 ]
 
 function LinkIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
