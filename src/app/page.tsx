@@ -189,8 +189,8 @@ export default async function Home() {
             Front-End Engineer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Sou Mauro, desenvolvedor de software com 3 anos de experiência, atualmente residindo em Jaragua do Sul/SC.
-            Faço parte da Azzero, uma holding de tecnologia focada em conectar clientes às soluções ideais para os seus desafios.
+            Sou Mauro, desenvolvedor de software com 3 anos de experiência, atualmente residindo em Jaragua do Sul/SC. <br />
+            Estou em busca de novos desafios e oportunidades para crescer profissionalmente e contribuir com a comunidade.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink href="https://x.com/MauroSorgatto" aria-label="Follow on X" icon={XIcon} />
