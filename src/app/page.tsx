@@ -10,6 +10,7 @@ import {
   XIcon,
 } from '@/components/SocialIcons'
 import azzeroLogo from '@/images/logos/azzerologo.svg'
+import efficonLogo from '@/images/logos/efficon-mark.svg'
 import futebol from '@/images/photos/Futebol.jpg'
 import gameover from '@/images/photos/GameOver.jpg'
 import helloworld from '@/images/photos/HelloWorld.jpg'
@@ -73,6 +74,7 @@ interface Role {
   logo: ImageProps['src']
   start: string | { label: string; dateTime: string }
   end: string | { label: string; dateTime: string }
+  logoClassName?: string
 }
 
 function Role({ role }: { role: Role }) {
@@ -84,10 +86,27 @@ function Role({ role }: { role: Role }) {
   let endLabel = typeof role.end === 'string' ? role.end : role.end.label
   let endDate = typeof role.end === 'string' ? role.end : role.end.dateTime
 
+  let logoDims =
+    typeof role.logo === 'object' &&
+    role.logo !== null &&
+    'width' in role.logo &&
+    'height' in role.logo
+      ? {
+          width: (role.logo as { width: number }).width,
+          height: (role.logo as { height: number }).height,
+        }
+      : {}
+
   return (
     <li className="flex gap-4">
       <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md ring-1 shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-        <Image src={role.logo} alt="" className="h-7 w-7 rounded-full" unoptimized />
+        <Image
+          src={role.logo}
+          alt=""
+          {...logoDims}
+          className={role.logoClassName ?? 'h-7 w-7 rounded-full'}
+          unoptimized
+        />
       </div>
       <dl className="flex flex-auto flex-wrap gap-x-2">
         <dt className="sr-only">Company</dt>
@@ -114,6 +133,14 @@ function Role({ role }: { role: Role }) {
 
 function Resume() {
   let resume: Array<Role> = [
+    {
+      company: 'Efficon',
+      title: 'Full-Stack Engineer(Freela)',
+      logo: efficonLogo,
+      start: 'March 2026',
+      end: 'May 2026',
+      logoClassName: 'h-6 w-6 object-contain',
+    },
     {
       company: 'Azzero Studio',
       title: 'Front-End Engineer',
@@ -183,7 +210,7 @@ export default async function Home() {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Front-End Engineer.
+            Full-Stack Engineer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             Sou Mauro, desenvolvedor de software com 3 anos de experiência, atualmente residindo em Jaragua do Sul/SC. <br />

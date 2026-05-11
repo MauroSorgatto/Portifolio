@@ -7,8 +7,25 @@ import logoAzzero from '@/images/logos/azzerologo.svg'
 import logoVendi from '@/images/logos/vendi.svg'
 import logoStag from '@/images/logos/stag.svg'
 import logoKaroliny from "@/images/logos/logoKaroliny.svg"
+import logoEfficon from '@/images/logos/efficon-mark.svg'
 
-const projects = [
+type Project = {
+  name: string
+  description: string
+  link: { href: string; label: string }
+  logo: typeof logoStag
+  logoClassName?: string
+}
+
+const projects: Project[] = [
+  {
+    name: 'Efficon',
+    description:
+      'Produto corporativo de gestão para construção civil: obras, suprimentos, financeiro, qualidade e integrações. Atuei como freelancer full stack (mar.–mai. 2026): Nuxt 3 (Vue, PrimeVue, Tailwind) e Laravel.',
+    link: { href: 'https://efficongest.com.br/', label: 'efficongest.com.br' },
+    logo: logoEfficon,
+    logoClassName: 'h-7 w-7 object-contain',
+  },
   {
     name: 'Stag App',
     description:
@@ -76,7 +93,9 @@ export default function Projects() {
               <Image
                 src={project.logo}
                 alt=""
-                className="h-8 w-8"
+                width={project.logo.width}
+                height={project.logo.height}
+                className={project.logoClassName ?? 'h-8 w-8'}
                 unoptimized
               />
             </div>

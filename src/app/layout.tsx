@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: {
     template: '%s - Mauro Sorgatto',
     default:
-      'Mauro Sorgatto - Front-End Engineer',
+      'Mauro Sorgatto - Full-Stack Engineer',
   },
   description:
     'Eu sou Mauro, Moro em Jaragua do Sul.  Sou formado em Análise e Desenvolvimento de Sistemas pela Univali desde 2024, mas já tô na área desde 2023.',
